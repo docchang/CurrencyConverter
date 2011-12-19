@@ -15,6 +15,30 @@
 		C88977A9149F0D8C000461C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977A8149F0D8C000461C6 /* AppDelegate.m */; };
 		C88977AC149F0D8C000461C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977AB149F0D8C000461C6 /* ViewController.m */; };
 		C88977AF149F0D8C000461C6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C88977AD149F0D8C000461C6 /* ViewController.xib */; };
+		C88977E8149F0DC1000461C6 /* SDZCurrencyConvertor.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977B7149F0DC1000461C6 /* SDZCurrencyConvertor.m */; };
+		C88977E9149F0DC1000461C6 /* SDZServices.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977B9149F0DC1000461C6 /* SDZServices.m */; };
+		C88977EA149F0DC1000461C6 /* Soap+Prefix.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977BB149F0DC1000461C6 /* Soap+Prefix.m */; };
+		C88977EB149F0DC1000461C6 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977BE149F0DC1000461C6 /* NSData+Base64.m */; };
+		C88977EC149F0DC1000461C6 /* NSMutableArray+Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977C0149F0DC1000461C6 /* NSMutableArray+Soap.m */; };
+		C88977ED149F0DC1000461C6 /* Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977C2149F0DC1000461C6 /* Soap.m */; };
+		C88977EE149F0DC1000461C6 /* SoapArray.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977C4149F0DC1000461C6 /* SoapArray.m */; };
+		C88977EF149F0DC1000461C6 /* SoapDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977C7149F0DC1000461C6 /* SoapDictionary.m */; };
+		C88977F0149F0DC1000461C6 /* SoapFault.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977C9149F0DC1000461C6 /* SoapFault.m */; };
+		C88977F1149F0DC1000461C6 /* SoapHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977CB149F0DC1000461C6 /* SoapHandler.m */; };
+		C88977F2149F0DC1000461C6 /* SoapLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977CD149F0DC1000461C6 /* SoapLiteral.m */; };
+		C88977F3149F0DC1000461C6 /* SoapNil.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977CF149F0DC1000461C6 /* SoapNil.m */; };
+		C88977F4149F0DC1000461C6 /* SoapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977D1149F0DC1000461C6 /* SoapObject.m */; };
+		C88977F5149F0DC1000461C6 /* SoapParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977D3149F0DC1000461C6 /* SoapParameter.m */; };
+		C88977F6149F0DC1000461C6 /* SoapReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977D5149F0DC1000461C6 /* SoapReachability.m */; };
+		C88977F7149F0DC1000461C6 /* SoapRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977D7149F0DC1000461C6 /* SoapRequest.m */; };
+		C88977F8149F0DC1000461C6 /* SoapService.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977D9149F0DC1000461C6 /* SoapService.m */; };
+		C88977F9149F0DC1000461C6 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977DC149F0DC1000461C6 /* CXMLDocument.m */; };
+		C88977FA149F0DC1000461C6 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977DE149F0DC1000461C6 /* CXMLDocument_PrivateExtensions.m */; };
+		C88977FB149F0DC1000461C6 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977E0149F0DC1000461C6 /* CXMLElement.m */; };
+		C88977FC149F0DC1000461C6 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977E2149F0DC1000461C6 /* CXMLNode.m */; };
+		C88977FD149F0DC1000461C6 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977E4149F0DC1000461C6 /* CXMLNode_PrivateExtensions.m */; };
+		C88977FE149F0DC1000461C6 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = C88977E6149F0DC1000461C6 /* CXMLNode_XPathExtensions.m */; };
+		C8897801149F0F41000461C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8897800149F0F41000461C6 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +46,64 @@
 		C8897798149F0D8C000461C6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C889779A149F0D8C000461C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C889779C149F0D8C000461C6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C88977A0149F0D8C000461C6 /* CurrencyConverter-Info.plist */ = {isa = PBXFileReference; path = "CurrencyConverter-Info.plist"; sourceTree = "<group>"; };
+		C88977A0149F0D8C000461C6 /* CurrencyConverter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CurrencyConverter-Info.plist"; sourceTree = "<group>"; };
 		C88977A2149F0D8C000461C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C88977A4149F0D8C000461C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C88977A6149F0D8C000461C6 /* CurrencyConverter-Prefix.pch */ = {isa = PBXFileReference; path = "CurrencyConverter-Prefix.pch"; sourceTree = "<group>"; };
-		C88977A7149F0D8C000461C6 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C88977A6149F0D8C000461C6 /* CurrencyConverter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CurrencyConverter-Prefix.pch"; sourceTree = "<group>"; };
+		C88977A7149F0D8C000461C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C88977A8149F0D8C000461C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C88977AA149F0D8C000461C6 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		C88977AA149F0D8C000461C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C88977AB149F0D8C000461C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C88977AE149F0D8C000461C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		C88977B6149F0DC1000461C6 /* SDZCurrencyConvertor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDZCurrencyConvertor.h; sourceTree = "<group>"; };
+		C88977B7149F0DC1000461C6 /* SDZCurrencyConvertor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDZCurrencyConvertor.m; sourceTree = "<group>"; };
+		C88977B8149F0DC1000461C6 /* SDZServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDZServices.h; sourceTree = "<group>"; };
+		C88977B9149F0DC1000461C6 /* SDZServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDZServices.m; sourceTree = "<group>"; };
+		C88977BA149F0DC1000461C6 /* Soap+Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Soap+Prefix.h"; sourceTree = "<group>"; };
+		C88977BB149F0DC1000461C6 /* Soap+Prefix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Soap+Prefix.m"; sourceTree = "<group>"; };
+		C88977BD149F0DC1000461C6 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		C88977BE149F0DC1000461C6 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		C88977BF149F0DC1000461C6 /* NSMutableArray+Soap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Soap.h"; sourceTree = "<group>"; };
+		C88977C0149F0DC1000461C6 /* NSMutableArray+Soap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Soap.m"; sourceTree = "<group>"; };
+		C88977C1149F0DC1000461C6 /* Soap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Soap.h; sourceTree = "<group>"; };
+		C88977C2149F0DC1000461C6 /* Soap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soap.m; sourceTree = "<group>"; };
+		C88977C3149F0DC1000461C6 /* SoapArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapArray.h; sourceTree = "<group>"; };
+		C88977C4149F0DC1000461C6 /* SoapArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapArray.m; sourceTree = "<group>"; };
+		C88977C5149F0DC1000461C6 /* SoapDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapDelegate.h; sourceTree = "<group>"; };
+		C88977C6149F0DC1000461C6 /* SoapDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapDictionary.h; sourceTree = "<group>"; };
+		C88977C7149F0DC1000461C6 /* SoapDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapDictionary.m; sourceTree = "<group>"; };
+		C88977C8149F0DC1000461C6 /* SoapFault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapFault.h; sourceTree = "<group>"; };
+		C88977C9149F0DC1000461C6 /* SoapFault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapFault.m; sourceTree = "<group>"; };
+		C88977CA149F0DC1000461C6 /* SoapHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapHandler.h; sourceTree = "<group>"; };
+		C88977CB149F0DC1000461C6 /* SoapHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapHandler.m; sourceTree = "<group>"; };
+		C88977CC149F0DC1000461C6 /* SoapLiteral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapLiteral.h; sourceTree = "<group>"; };
+		C88977CD149F0DC1000461C6 /* SoapLiteral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapLiteral.m; sourceTree = "<group>"; };
+		C88977CE149F0DC1000461C6 /* SoapNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapNil.h; sourceTree = "<group>"; };
+		C88977CF149F0DC1000461C6 /* SoapNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapNil.m; sourceTree = "<group>"; };
+		C88977D0149F0DC1000461C6 /* SoapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapObject.h; sourceTree = "<group>"; };
+		C88977D1149F0DC1000461C6 /* SoapObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapObject.m; sourceTree = "<group>"; };
+		C88977D2149F0DC1000461C6 /* SoapParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapParameter.h; sourceTree = "<group>"; };
+		C88977D3149F0DC1000461C6 /* SoapParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapParameter.m; sourceTree = "<group>"; };
+		C88977D4149F0DC1000461C6 /* SoapReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapReachability.h; sourceTree = "<group>"; };
+		C88977D5149F0DC1000461C6 /* SoapReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapReachability.m; sourceTree = "<group>"; };
+		C88977D6149F0DC1000461C6 /* SoapRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapRequest.h; sourceTree = "<group>"; };
+		C88977D7149F0DC1000461C6 /* SoapRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapRequest.m; sourceTree = "<group>"; };
+		C88977D8149F0DC1000461C6 /* SoapService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapService.h; sourceTree = "<group>"; };
+		C88977D9149F0DC1000461C6 /* SoapService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapService.m; sourceTree = "<group>"; };
+		C88977DB149F0DC1000461C6 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		C88977DC149F0DC1000461C6 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		C88977DD149F0DC1000461C6 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		C88977DE149F0DC1000461C6 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		C88977DF149F0DC1000461C6 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		C88977E0149F0DC1000461C6 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		C88977E1149F0DC1000461C6 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		C88977E2149F0DC1000461C6 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		C88977E3149F0DC1000461C6 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		C88977E4149F0DC1000461C6 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		C88977E5149F0DC1000461C6 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		C88977E6149F0DC1000461C6 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		C88977E7149F0DC1000461C6 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		C8897800149F0F41000461C6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8897801149F0F41000461C6 /* SystemConfiguration.framework in Frameworks */,
 				C8897799149F0D8C000461C6 /* UIKit.framework in Frameworks */,
 				C889779B149F0D8C000461C6 /* Foundation.framework in Frameworks */,
 				C889779D149F0D8C000461C6 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +124,8 @@
 		C8897789149F0D8C000461C6 = {
 			isa = PBXGroup;
 			children = (
+				C8897800149F0F41000461C6 /* SystemConfiguration.framework */,
+				C88977FF149F0DD2000461C6 /* External */,
 				C889779E149F0D8C000461C6 /* CurrencyConverter */,
 				C8897797149F0D8C000461C6 /* Frameworks */,
 				C8897795149F0D8C000461C6 /* Products */,
@@ -96,6 +172,88 @@
 				C88977A6149F0D8C000461C6 /* CurrencyConverter-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C88977B5149F0DC1000461C6 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				C88977B6149F0DC1000461C6 /* SDZCurrencyConvertor.h */,
+				C88977B7149F0DC1000461C6 /* SDZCurrencyConvertor.m */,
+				C88977B8149F0DC1000461C6 /* SDZServices.h */,
+				C88977B9149F0DC1000461C6 /* SDZServices.m */,
+				C88977BA149F0DC1000461C6 /* Soap+Prefix.h */,
+				C88977BB149F0DC1000461C6 /* Soap+Prefix.m */,
+			);
+			name = Generated;
+			path = CurrencyConverter/Generated;
+			sourceTree = "<group>";
+		};
+		C88977BC149F0DC1000461C6 /* Soap */ = {
+			isa = PBXGroup;
+			children = (
+				C88977BD149F0DC1000461C6 /* NSData+Base64.h */,
+				C88977BE149F0DC1000461C6 /* NSData+Base64.m */,
+				C88977BF149F0DC1000461C6 /* NSMutableArray+Soap.h */,
+				C88977C0149F0DC1000461C6 /* NSMutableArray+Soap.m */,
+				C88977C1149F0DC1000461C6 /* Soap.h */,
+				C88977C2149F0DC1000461C6 /* Soap.m */,
+				C88977C3149F0DC1000461C6 /* SoapArray.h */,
+				C88977C4149F0DC1000461C6 /* SoapArray.m */,
+				C88977C5149F0DC1000461C6 /* SoapDelegate.h */,
+				C88977C6149F0DC1000461C6 /* SoapDictionary.h */,
+				C88977C7149F0DC1000461C6 /* SoapDictionary.m */,
+				C88977C8149F0DC1000461C6 /* SoapFault.h */,
+				C88977C9149F0DC1000461C6 /* SoapFault.m */,
+				C88977CA149F0DC1000461C6 /* SoapHandler.h */,
+				C88977CB149F0DC1000461C6 /* SoapHandler.m */,
+				C88977CC149F0DC1000461C6 /* SoapLiteral.h */,
+				C88977CD149F0DC1000461C6 /* SoapLiteral.m */,
+				C88977CE149F0DC1000461C6 /* SoapNil.h */,
+				C88977CF149F0DC1000461C6 /* SoapNil.m */,
+				C88977D0149F0DC1000461C6 /* SoapObject.h */,
+				C88977D1149F0DC1000461C6 /* SoapObject.m */,
+				C88977D2149F0DC1000461C6 /* SoapParameter.h */,
+				C88977D3149F0DC1000461C6 /* SoapParameter.m */,
+				C88977D4149F0DC1000461C6 /* SoapReachability.h */,
+				C88977D5149F0DC1000461C6 /* SoapReachability.m */,
+				C88977D6149F0DC1000461C6 /* SoapRequest.h */,
+				C88977D7149F0DC1000461C6 /* SoapRequest.m */,
+				C88977D8149F0DC1000461C6 /* SoapService.h */,
+				C88977D9149F0DC1000461C6 /* SoapService.m */,
+			);
+			name = Soap;
+			path = CurrencyConverter/Soap;
+			sourceTree = "<group>";
+		};
+		C88977DA149F0DC1000461C6 /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				C88977DB149F0DC1000461C6 /* CXMLDocument.h */,
+				C88977DC149F0DC1000461C6 /* CXMLDocument.m */,
+				C88977DD149F0DC1000461C6 /* CXMLDocument_PrivateExtensions.h */,
+				C88977DE149F0DC1000461C6 /* CXMLDocument_PrivateExtensions.m */,
+				C88977DF149F0DC1000461C6 /* CXMLElement.h */,
+				C88977E0149F0DC1000461C6 /* CXMLElement.m */,
+				C88977E1149F0DC1000461C6 /* CXMLNode.h */,
+				C88977E2149F0DC1000461C6 /* CXMLNode.m */,
+				C88977E3149F0DC1000461C6 /* CXMLNode_PrivateExtensions.h */,
+				C88977E4149F0DC1000461C6 /* CXMLNode_PrivateExtensions.m */,
+				C88977E5149F0DC1000461C6 /* CXMLNode_XPathExtensions.h */,
+				C88977E6149F0DC1000461C6 /* CXMLNode_XPathExtensions.m */,
+				C88977E7149F0DC1000461C6 /* TouchXML.h */,
+			);
+			name = TouchXML;
+			path = CurrencyConverter/TouchXML;
+			sourceTree = "<group>";
+		};
+		C88977FF149F0DD2000461C6 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				C88977B5149F0DC1000461C6 /* Generated */,
+				C88977BC149F0DC1000461C6 /* Soap */,
+				C88977DA149F0DC1000461C6 /* TouchXML */,
+			);
+			name = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +321,29 @@
 				C88977A5149F0D8C000461C6 /* main.m in Sources */,
 				C88977A9149F0D8C000461C6 /* AppDelegate.m in Sources */,
 				C88977AC149F0D8C000461C6 /* ViewController.m in Sources */,
+				C88977E8149F0DC1000461C6 /* SDZCurrencyConvertor.m in Sources */,
+				C88977E9149F0DC1000461C6 /* SDZServices.m in Sources */,
+				C88977EA149F0DC1000461C6 /* Soap+Prefix.m in Sources */,
+				C88977EB149F0DC1000461C6 /* NSData+Base64.m in Sources */,
+				C88977EC149F0DC1000461C6 /* NSMutableArray+Soap.m in Sources */,
+				C88977ED149F0DC1000461C6 /* Soap.m in Sources */,
+				C88977EE149F0DC1000461C6 /* SoapArray.m in Sources */,
+				C88977EF149F0DC1000461C6 /* SoapDictionary.m in Sources */,
+				C88977F0149F0DC1000461C6 /* SoapFault.m in Sources */,
+				C88977F1149F0DC1000461C6 /* SoapHandler.m in Sources */,
+				C88977F2149F0DC1000461C6 /* SoapLiteral.m in Sources */,
+				C88977F3149F0DC1000461C6 /* SoapNil.m in Sources */,
+				C88977F4149F0DC1000461C6 /* SoapObject.m in Sources */,
+				C88977F5149F0DC1000461C6 /* SoapParameter.m in Sources */,
+				C88977F6149F0DC1000461C6 /* SoapReachability.m in Sources */,
+				C88977F7149F0DC1000461C6 /* SoapRequest.m in Sources */,
+				C88977F8149F0DC1000461C6 /* SoapService.m in Sources */,
+				C88977F9149F0DC1000461C6 /* CXMLDocument.m in Sources */,
+				C88977FA149F0DC1000461C6 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				C88977FB149F0DC1000461C6 /* CXMLElement.m in Sources */,
+				C88977FC149F0DC1000461C6 /* CXMLNode.m in Sources */,
+				C88977FD149F0DC1000461C6 /* CXMLNode_PrivateExtensions.m in Sources */,
+				C88977FE149F0DC1000461C6 /* CXMLNode_XPathExtensions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +417,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CurrencyConverter/CurrencyConverter-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "CurrencyConverter/CurrencyConverter-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -247,7 +430,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CurrencyConverter/CurrencyConverter-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "CurrencyConverter/CurrencyConverter-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

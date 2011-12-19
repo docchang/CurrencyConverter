@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "SoapDelegate.h"
+
+@interface ViewController : UIViewController <SoapDelegate>
+
+
+@property (nonatomic, retain) IBOutlet UITextField *ouncesOfGold;
+@property (nonatomic, retain) IBOutlet UILabel *valueInCurrency;
+@property (nonatomic, retain) IBOutlet UIButton *currency;
+
+- (IBAction) currencyPressed:(id)sender;
+
 
 @end

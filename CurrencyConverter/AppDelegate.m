@@ -10,6 +10,9 @@
 
 #import "ViewController.h"
 
+
+
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -22,8 +25,17 @@
     [super dealloc];
 }
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    SDZCurrencyConvertor *service = [[SDZCurrencyConvertor service] retain];
+//    [service ConversionRate:self FromCurrency:@"USD" ToCurrency:@"TWD"];
+//    [service release];
+    
+    
+    
+    
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
